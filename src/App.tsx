@@ -12,22 +12,18 @@ export default function Page() {
 
   const getNoButtonText = () => {
     const phrases = [
-      "No",
-      "Are you sure?",
-      "What if I asked really nicely?",
-      "Pretty please",
-      "With a chocolate rice cake on top",
-      "What about a matcha frostie",
-      "PLEASE POOKIE",
-      "But :*(",
-      "I am going to die",
-      "Yep im dead",
-      "ok ur talking to nathan's ghost",
-      "please babe",
-      ":((((",
-      "PRETTY PLEASE",
-      "Estoy muerto",
-      "No :(",
+      "Non",
+      "T'es sûre de toi ?",
+      "Et si je demande avec amour ?",
+      "Allez stp",
+      "Je peux te donner un bout de chocolo",
+      "Avec un thé chai ?",
+      "ALLEZ ENFIIIIN",
+      "Mais",
+      "Je meurs",
+      "Oui je suis mort",
+      "Tu parles à mon fantôme",
+      "Je suis sadness",
     ];
 
     return phrases[Math.min(noCount, phrases.length - 1)];
@@ -53,7 +49,7 @@ export default function Page() {
               style={{ fontSize: yesButtonSize }}
               onClick={() => setYesPressed(true)}
             >
-              Yes
+              Oui
             </button>
             <button
               onClick={handleNoClick}
